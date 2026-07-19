@@ -4,77 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique del Tabacco - Torino</title>
-    <!-- Collegamento al file CSS -->
+    <!-- Icone FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- File CSS Locale -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Boutique del Tabacco</h1>
-        <p>La tua tabaccheria di fiducia a Torino</p>
+    <!-- Header / Hero con Immagine di Sfondo -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Tabaccheria & Servizi</span>
+            <h1>Boutique del Tabacco</h1>
+            <p>La tua tabaccheria di fiducia a Torino</p>
+            <a href="https://maps.google.com/?q=Via+C+Colombo+25+10129+Torino" target="_blank" class="btn-primary">
+                <i class="fa-solid fa-location-dot"></i> Vieni a trovarci
+            </a>
+        </div>
     </header>
 
-    <!-- Info Indirizzo rapido -->
+    <!-- Barra Indirizzo Rapida -->
     <div class="address-bar">
-        📍 Via C. Colombo 25, 10129 Torino (TO) | 
-        <a href="https://maps.google.com/?q=Via+C+Colombo+25+10129+Torino" target="_blank">Ottieni Indicazioni</a>
+        <span><i class="fa-solid fa-map-pin"></i> Via C. Colombo 25, 10129 Torino (TO)</span>
+        <a href="https://maps.google.com/?q=Via+C+Colombo+25+10129+Torino" target="_blank">Apri Mappa <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
-    <!-- Contenuto Principale -->
-    <div class="container">
+    <!-- Contenitore Principale -->
+    <main class="container">
         
-        <h2 class="section-title">I Nostri Servizi</h2>
+        <!-- Sezione Servizi -->
+        <section class="services-section">
+            <h2 class="section-title">I Nostri Servizi</h2>
+            <p class="section-subtitle">Tutto quello di cui hai bisogno in un unico posto</p>
 
-        <div class="services-grid">
-            
-            <!-- Categoria 1 -->
-            <div class="service-card">
-                <h3>Tabaccheria & Svapo</h3>
-                <ul>
-                    <li>Sigarette tradizionali e trinciati</li>
-                    <li>Sigarette elettroniche & Liquidi</li>
-                    <li>Accendini delle migliori marche</li>
-                    <li>Cartine, filtri e accessori</li>
-                </ul>
+            <div class="services-grid">
+                
+                <!-- Card 1: Tabaccheria -->
+                <div class="service-card">
+                    <div class="card-img-wrapper">
+                        <!-- Sostituisci "tabacco.jpg" con la tua foto -->
+                        <img src="tabacco.jpg" alt="Tabacchi e Sigarette Elettroniche" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-smoking"></i> Tabaccheria & Svapo</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Sigarette tradizionali e trinciati</li>
+                            <li><i class="fa-solid fa-check"></i> Sigarette elettroniche & Liquidi</li>
+                            <li><i class="fa-solid fa-check"></i> Accendini delle migliori marche</li>
+                            <li><i class="fa-solid fa-check"></i> Cartine, filtri e accessori</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2: Pagamenti -->
+                <div class="service-card">
+                    <div class="card-img-wrapper">
+                        <!-- Sostituisci "pagamenti.jpg" con la tua foto -->
+                        <img src="pagamenti.jpg" alt="Pagamenti e Ricariche" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-credit-card"></i> Pagamenti & Ricariche</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Ricariche telefoniche</li>
+                            <li><i class="fa-solid fa-check"></i> Ricariche PostePay</li>
+                            <li><i class="fa-solid fa-check"></i> Bollette, utenze e PagoPA</li>
+                            <li><i class="fa-solid fa-check"></i> Pagamento multe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3: Giochi -->
+                <div class="service-card">
+                    <div class="card-img-wrapper">
+                        <!-- Sostituisci "giochi.jpg" con la tua foto -->
+                        <img src="giochi.jpg" alt="Lotto e Gratta e Vinci" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-clover"></i> Lotto & Intrattenimento</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> SuperEnalotto & Jackpot</li>
+                            <li><i class="fa-solid fa-check"></i> Gratta e Vinci</li>
+                            <li><i class="fa-solid fa-check"></i> Servizi Sisal & Lottomatica</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-            <!-- Categoria 2 -->
-            <div class="service-card">
-                <h3>Servizi di Pagamento</h3>
-                <ul>
-                    <li>Ricariche telefoniche (tutti i gestori)</li>
-                    <li>Ricariche PostePay</li>
-                    <li>Pagamento bollette e utenze</li>
-                    <li>Pagamento multe e avvisi PagoPA</li>
-                </ul>
+        <!-- Sezione Galleria Foto Locale -->
+        <section class="gallery-section">
+            <h2 class="section-title">Il Nostro Negozio</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="negozio1.jpg" alt="Interno della Boutique del Tabacco">
+                </div>
+                <div class="gallery-item">
+                    <img src="negozio2.jpg" alt="Prodotti ed esposizione">
+                </div>
+                <div class="gallery-item">
+                    <img src="negozio3.jpg" alt="Esterno del negozio">
+                </div>
             </div>
+        </section>
 
-            <!-- Categoria 3 -->
-            <div class="service-card">
-                <h3>Lotto & Giochi</h3>
-                <ul>
-                    <li>SuperEnalotto</li>
-                    <li>Gratta e Vinci</li>
-                    <li>Jackpot e giochi Sisal/Lottomatica</li>
-                </ul>
+        <!-- Sezione Mappa/Dove Siamo -->
+        <section class="location-card">
+            <div class="location-info">
+                <h2><i class="fa-solid fa-store"></i> Passa a Trovarci</h2>
+                <p>Siamo a Torino in zona Crocetta, pronti ad offrirti la massima cortesia e un servizio rapido.</p>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Via C. Colombo 25, 10129 Torino</span>
+                </div>
+                <a class="btn-primary" href="https://maps.google.com/?q=Via+C+Colombo+25+10129+Torino" target="_blank">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Indicazioni Stradali
+                </a>
             </div>
+        </section>
 
-        </div>
-
-        <!-- Sezione Dove Siamo -->
-        <div class="location-section">
-            <h2>Vieni a trovarci</h2>
-            <p style="margin-top: 10px;">Ci troviamo nel cuore della zona Crocetta a Torino.</p>
-            <p><strong>Indirizzo:</strong> Via C. Colombo 25, 10129 Torino</p>
-            <a class="btn-map" href="https://maps.google.com/?q=Via+C+Colombo+25+10129+Torino" target="_blank">Apri su Google Maps</a>
-        </div>
-
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; Boutique del Tabacco - Via C Colombo 25, Torino. Tutti i diritti riservati.</p>
+        <p>&copy; Boutique del Tabacco - Via C. Colombo 25, Torino. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
